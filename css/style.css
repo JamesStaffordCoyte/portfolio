@@ -242,8 +242,8 @@ footer div {
 
 @media screen and (max-width: 700px) {
   .switch {
-    right: 18%;
-
+    right: 5%;
+    /* margin-right: %; */
 
   }
   /* TODO: move email under "get in touch" */
@@ -305,14 +305,20 @@ footer div {
   }
 
 }
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 5%;
 
+}
 /* The night and day mode switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
-  margin: 5% 85%;
+  margin-right: 5%;
 }
 
 .switch i {
@@ -383,3 +389,15 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /* End of switch css */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
