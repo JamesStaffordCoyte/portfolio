@@ -203,6 +203,7 @@
 
 /* footer properties */
 footer {
+  background-color: background-color: #2196F3;
   padding-top: 15%;
   font-weight: bold;
   line-height: 30px;
