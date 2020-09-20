@@ -33,7 +33,7 @@
 
 .greeting p {
   font-size: 40px;
-  padding-top: 10%;
+  padding-top: 3%;
   padding-right: 30%;
 }
 
@@ -59,6 +59,16 @@
   background-position: -100%;
 }
 
+.donate {
+  display: none;
+}
+
+.donate p{
+  
+  font-size: 20px;
+  padding-top: 0;
+  padding-right: 0;
+}
 /* CSS for bottom part of the first section - different than .greeting*/
 .contact p, .contact i, .contact a{
   font-size: 20px;
@@ -97,6 +107,14 @@
   font-size: 20px;
   margin-left: 10%;
   margin-right: 10%;
+  width: 50%;
+}
+
+.stats {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 0%;
+  margin-right: 0%; 
   width: 50%;
 }
 
@@ -311,7 +329,7 @@ footer div {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 5%;
-
+  
 }
 /* The night and day mode switch - the box around the slider */
 .switch {
@@ -338,6 +356,10 @@ footer div {
   left: 60%;
   top: 15%;
 }
+
+/* .introduction {
+  margin-right: -15%;
+} */
 
 /* Hide default HTML checkbox */
 .switch input {display:none;}
@@ -397,8 +419,38 @@ input:checked + .slider:before {
 }
 /* Centered text */
 .centered {
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.post-images {
+  width: 75%;
+}
+
+@media only screen and (max-width: 1155px) {
+  .switch {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    height: 200px;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+  }
+
+  .images {
+    height: 200px;
+  }
+
+  .contact{
+  display: none;
+  }
+  
+  .donate {
+    display: inline-block;
+  }
 }
